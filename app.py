@@ -3,7 +3,8 @@ from json import dumps
 from flask import Flask, request
 from flask import make_response
 from flask_cors import CORS
-from sklearn.externals import joblib
+import joblib
+
 
 app = Flask(__name__)
 CORS(app)
