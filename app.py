@@ -9,7 +9,7 @@ import joblib
 app = Flask(__name__)
 CORS(app)
 
-model = joblib.load('model.joblib')
+model = joblib.load('machine-learning-model.joblib')
 
 
 @app.route('/api/predict', methods=['POST'])
